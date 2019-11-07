@@ -1,8 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Updates
+added a toggleVisibility onClick button and a counter with functions (increase, decrease, reset)
 
-## MSG from Haakon
+
+## How to install
 
 After cloning the repo remember to use "npm install" for the missing files required.
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
