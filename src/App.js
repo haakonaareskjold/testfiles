@@ -3,6 +3,7 @@ import React from "react";
 //custom imports
 import Counter from "./counter";
 import ToggleVisibility from "./ToggleVisibility";
+import ControlledInput from "./controlledInput";
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,11 @@ class App extends React.Component {
         <hr />
         <br />
         <ToggleVisibility />
+        <br />
+        <hr />
+        <br />
+        <ControlledInput />
+        <br />
       </div>
     );
   }
