@@ -1,16 +1,17 @@
 import React from "react";
 
 //custom imports
+import './app.css';
 import Counter from "./counter";
 import ToggleVisibility from "./ToggleVisibility";
-import ControlledInput from "./controlledInput";
+import ControlledForm from "./controlledForm";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Haakon's website for lidl tests</h1>
-        <p>Every component will be divided by a header</p>
+        <h1 style= {{ color: "cyan", fontFamily: "roboto", fontSize: "50px" }}>Haakon's website for lidl tests</h1>
+        <h3><strong>Every component will be divided by a header</strong></h3>
         <br />
         <hr />
         <br />
@@ -22,7 +23,7 @@ class App extends React.Component {
         <br />
         <hr />
         <br />
-        <ControlledInput />
+        <ControlledForm />
         <br />
       </div>
     );

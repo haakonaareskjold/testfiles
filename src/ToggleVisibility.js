@@ -25,7 +25,8 @@ class ToggleVisibility extends React.Component {
       return (
         <div>
           <button onClick={this.toggleVisibility}>Click Me</button>
-          <h1>Hello World!</h1>
+          <img src="https://i.imgur.com/u64PDoW.png" alt="sanicPopopega" />
+          <h1>A wild sanicPopopega appears</h1>
         </div>
       );
     } else {
