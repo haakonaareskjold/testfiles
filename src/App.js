@@ -5,6 +5,7 @@ import './app.css';
 import Counter from "./counter";
 import ToggleVisibility from "./ToggleVisibility";
 import ControlledForm from "./controlledForm";
+import VideoPlayer from "./videoPlayer/VideoPlayer";
 
 export default class App extends React.Component {
   render() {
@@ -24,6 +25,10 @@ export default class App extends React.Component {
         <hr />
         <br />
         <ControlledForm />
+        <br />
+        <hr />
+        <br />
+        <VideoPlayer />
         <br />
       </div>
     );

@@ -1,5 +1,5 @@
 ## Most recent update
-added controlledForm.js and some CSS
+added controlledForm.js , very basic CSS and a video player
 
 
 ## How to install
