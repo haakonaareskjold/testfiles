@@ -16,7 +16,7 @@ export default class App extends React.Component {
         <br />
         <hr />
         <br />
-        <Counter />
+        <VideoPlayer />
         <br />
         <hr />
         <br />
@@ -28,7 +28,7 @@ export default class App extends React.Component {
         <br />
         <hr />
         <br />
-        <VideoPlayer />
+        <Counter />
         <br />
       </div>
     );
