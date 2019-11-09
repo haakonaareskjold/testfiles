@@ -1,17 +1,18 @@
 import React from 'react';
 
 export const VIDEOS = {
-  fast: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-fast.mp4',
-  slow: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-slow.mp4',
-  cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
-  eek: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-eek.mp4'
+  RickRoll: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
+  HEYAYAYA: 'https://www.youtube.com/embed/cVYvozAWPtc?autoplay=1',
+  Kappa: 'https://www.youtube.com/embed/BpHSm0KcW7o?autoplay=1',
+  HL3Trailer: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
 };
 
 export class Video extends React.Component {
   render() {
     return (
       <div>
-        <video controls autostart autoPlay muted src={this.props.src}/>
+        <iframe title ="Video" style = {{width: "720", height: "480", frameborder: "0", autoplay: "1", allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"}} 
+        src={this.state.src} />
       </div>
     );
   }

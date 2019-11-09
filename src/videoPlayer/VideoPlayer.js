@@ -1,5 +1,4 @@
 import React from 'react';
-import { Video } from './video';
 import Menu from './menu';
 import { VIDEOS } from './video'
 
@@ -23,7 +22,8 @@ export default class VideoPlayer extends React.Component {
       <div>
         <h1>Video Player</h1>
          <Menu chooseVideo={this.chooseVideo} />
-        <Video src={this.state.src} />
+         <iframe title ="Video" style = {{width: "560", height: "315", frameborder: "0", allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"}} 
+        src={this.state.src} />
       </div>
     );
   }
