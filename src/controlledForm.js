@@ -1,6 +1,6 @@
 import React from "react";
 
-class ControlledForm extends React.Component {
+export default class ControlledForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +36,3 @@ class ControlledForm extends React.Component {
     );
   }
 };
-
-
-export default ControlledForm;

@@ -6,7 +6,7 @@ import Counter from "./counter";
 import ToggleVisibility from "./ToggleVisibility";
 import ControlledForm from "./controlledForm";
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -29,6 +29,3 @@ class App extends React.Component {
     );
   }
 }
-
-//export
-export default App;
