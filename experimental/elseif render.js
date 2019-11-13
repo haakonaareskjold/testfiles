@@ -4,30 +4,21 @@ class MyComponent extends React.Component {
     this.state = {
       display: true
     };
-
     this.toggleDisplay = this.toggleDisplay.bind(this);
   }
-
   toggleDisplay() {
-    this.setState({
-      display: !this.state.display
-    });
+    this.setState(state => ({
+      display: !state.display
+    }));
   }
 
+  //uses && operator as an else / if
   render() {
-    if (this.state.display) {
-      return (
-        <div>
-          <button onClick={this.toggleDisplay}>Toggle Display</button>
-          <h1>Displayed!</h1>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <button onClick={this.toggleDisplay}>Toggle Display</button>
-        </div>
-      );
-    }
+    return (
+      <div>
+        <button onClick={this.toggleDisplay}>Toggle Display</button>
+        {this.state.display && <h1>Displayed!</h1>}
+      </div>
+    );
   }
 }
