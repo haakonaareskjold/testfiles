@@ -1,12 +1,11 @@
 import React from "react";
 
+
 //custom imports
-import './app.css';
 import Counter from "./counter";
 import ToggleVisibility from "./ToggleVisibility";
 import ControlledForm from "./controlledForm";
 import VideoPlayer from "./videoPlayer/VideoPlayer";
-//import RandomNumber from "./randomNumber";
 
 export default class App extends React.Component {
   render() {
@@ -26,10 +25,6 @@ export default class App extends React.Component {
         <hr />
         <br />
         <ControlledForm />
-        <br />
-        <hr />
-        <br />
-        {/* <RandomNumber /> */}
         <br />
         <hr />
         <br />
