@@ -2,9 +2,32 @@
 <html>
     <head>
         <title>Introduction to OOP</title>
+        <style>
+        .pleb {
+            color: green;
+            margin-left: 40px;
+            text-align:center;
+            }
+
+        body {
+            background-color: #b0abab;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+            font-size: 30px;
+            text-align:center;
+            color: cyan;
+
+        }
+
+        </style>
     </head>
     <body>
-        <h6>
+        <div class="pleb">
         <?php
         
             // Creating class
@@ -23,7 +46,7 @@
 
                 // Create a method (function tied to an object)
                 public function hello() {
-                    return "I am " . $this-> firstname . " " . $this-> lastname . "." . " My age is: " . $this-> age . ".";
+                    return "I am " . $this-> firstname . " " . $this-> lastname . "." . " My age is " . $this-> age . ".";
                 }
             }
 
@@ -33,11 +56,14 @@
             $person2 = new person ("Haakon", "Aareskjold", 25);
 
             //prints out what the hello method returns
-            echo $person1->hello();
+            echo "<h1>" . $person1->hello() . "</h1>";
             echo "<br>";
-            echo $person2->hello();
+            echo "<h1>" . $person2->hello() . "</h1>";
         
         ?>
-        </h6>
+        </div>
     </body>
+    <footer>
+        <h2>Made by Haakon</h2>
+    </footer>
 </html>
